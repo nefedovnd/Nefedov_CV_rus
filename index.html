@@ -9,12 +9,13 @@
       height: 100%;
       margin: 0;
       font-size: 16px;
+      position: relative;
     }
 
     .button-container {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 10px;
+      right: 10px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -31,26 +32,16 @@
       display: inline-block;
     }
 
-    .resume-button {
-      position: absolute;
-      bottom: 80px;
-      right: 20px;
-    }
-
     @media (max-width: 768px) {
       .button-container {
         flex-direction: row;
+        bottom: 10px;
+        right: 10px;
       }
 
       .button {
         padding: 10px 15px;
         font-size: 14px;
-      }
-
-      .resume-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
       }
     }
   </style>
@@ -60,7 +51,7 @@
   
   <div class="button-container">
     <a href="https://github.com/nefedovnd/Nefedov_CV_rus/raw/main/Никита Нефедов резюме.pdf" download class="button">Download</a>
-    <a href="https://nefedovnd.github.io/Nefedov_CV/" target="_blank" class="button resume-button">резюме на английском</a>
+    <a href="https://nefedovnd.github.io/Nefedov_CV/" target="_blank" class="button">резюме на английском</a>
   </div>
 </body>
 </html>
